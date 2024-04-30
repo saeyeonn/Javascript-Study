@@ -1,2 +1,2 @@
-# React-Study
-React.js
+# Javascript-Study
+
