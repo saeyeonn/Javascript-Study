@@ -10,15 +10,20 @@ JavaScript will allow us to run code on the client side, meaning no interaction 
 <br>
 
 - Visual appeal
+<br>
 Individual HTML and JS files become more readable.
 
 - Access among HTML files
+<br>
 We can have multiple HTML files that all share same JS.
 
 - Collaboration
+<br>
 We can easily have one person work on JS while another works on HTML.
 
 - Import
+<br>
+
 We are able to import JS libs that other people have aloready written. (e.g. Bootstrap)
 
 <br>
@@ -34,7 +39,38 @@ We are able to import JS libs that other people have aloready written. (e.g. Boo
 
 - Printing to consol is an useful tool for debugging.
 
+<br>
+
 ```javascript
 // EX - can print all by selecting all buttons in page
+
 console.log(document.querySelectorAll('button'));
+```
+
+<br>
+<br>
+
+### JavaScript Object & API
+
+<br>
+
+- Useful in transferring data from one site to another, particularly when using APIs.
+- JSON : JavaScript Object Notation
+- API is a structured form communication between two different applications.
+- We can get information from services by making calls to a service’s API, which will return structured data to us, often in JSON form.
+
+<br>
+
+```javascript
+{
+    "origin": {
+        "city": "New York",
+        "code": "JFK"
+    },
+    "destination": {
+        "city": "London",
+        "code": "LHR"
+    },
+    "duration": 415
+}
 ```

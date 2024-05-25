@@ -4,6 +4,8 @@
         <title>Colors</title>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
+                // 선택 요소에서의 변경 사항 감지하기 위해 onchange 속성 사용
+                // * 문맥에 따라 변경되는 키워드 -> Event Handler의 경우 이벤트를 트리거한 객체를 가리킴
                 document.querySelector('select').onchange = function() {
                     document.querySelector('#hello').style.color = this.value;
                 }
