@@ -74,3 +74,16 @@ console.log(document.querySelectorAll('button'));
     "duration": 415
 }
 ```
+
+<br>
+<br>
+
+### AJAX - Asynchronous JavaScript And XML
+
+<br>
+
+- Allows to access information from external pages even after our page has loaded.
+- We can make requests to servers without having to reload the page.
+- We use fetch function which will allow us to send HTTP request.
+- Fetch function returns a promise.
+- Promise can be thought as a value that will come through at some point but not necessarily right away.
