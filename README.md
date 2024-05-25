@@ -9,22 +9,13 @@ JavaScript will allow us to run code on the client side, meaning no interaction 
 
 <br>
 
-- Visual appeal
-<br>
-Individual HTML and JS files become more readable.
+- Visual appeal : Individual HTML and JS files become more readable.
 
-- Access among HTML files
-<br>
-We can have multiple HTML files that all share same JS.
+- Access among HTML files : We can have multiple HTML files that all share same JS.
 
-- Collaboration
-<br>
-We can easily have one person work on JS while another works on HTML.
+- Collaboration : We can easily have one person work on JS while another works on HTML.
 
-- Import
-<br>
-
-We are able to import JS libs that other people have aloready written. (e.g. Bootstrap)
+- Import : We are able to import JS libs that other people have aloready written. (e.g. Bootstrap)
 
 <br>
 <br>
