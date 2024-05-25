@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello</title>
+    <script>
+        function querySelect() {
+            // document.querySelector 로 DOM 요소 검색 -> innerHTML 속성 변경 가능
+           const header = document.querySelector('h1');
+            if (header.innerHTML == 'Hello!') {
+                header.innerHTML = 'Goodbye!';  // toggle
+            } else {
+                header.innerHTML = 'Hello!';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // document.querySelector 로 DOM 요소 검색 -> innerHTML 속성 변경 가능
+            document.querySelector('form').onsubmit = function() {
+                // 입력 필드의 value 속성을 이용해 현재 입력된 내용 찾음
+                const name = document.querySelector('#name').value;
+                alert(`Hello, ${name}`);
+            };
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <!-- autofocus : 페이지 로드할 때마다 입력 필드에 커서 설정되도록 하는 필드-->
+        <input autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Colors</title>
+     <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            // querySelectorAll : 쿼리와 일치하는 모든 요소로 구성된 노드 목록 얻음
+            // * Node List = python List / JS Array 와 유사
+            document.querySelectorAll('button').forEach(function(button) { // forEach 는 함수도 받음
+                button.onclick = function() {
+                    // style.?? 속성 사용하여 요소 스타일 변경
+                    document.querySelector("#hello").style.color = button.dataset.color;
+                }
+            });
+         });
+     </script>
+</head>
+<body>
+    <h1 id="hello">Hello</h1>
+    <!-- data-?? 속성 사용하여 HTML 요소에 데이터 할당-->
+    <button data-color="red">Red</button>
+    <button data-color="blue">Blue</button>
+    <button data-color="green">Green</button>
+</body>
+</html>
