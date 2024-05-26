@@ -78,3 +78,23 @@ console.log(document.querySelectorAll('button'));
 - We use fetch function which will allow us to send HTTP request.
 - Fetch function returns a promise.
 - Promise can be thought as a value that will come through at some point but not necessarily right away.
+
+<br>
+<br>
+
+### Page Switching
+
+<br>
+
+- Load just single page and then use JS to manipulate DOM
+- Use JS to change the content of the page without having to reload the page.
+- Only need to modify part of the page that is actually changing.
+
+<br>
+<br>
+
+### 
+
+<br>
+
+- 

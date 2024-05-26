@@ -1,4 +1,7 @@
+/* CSS 는 스타일링 뿐만 아니라 HTML 요소에 애니메이션 쉽게 제공 */
+
 @keyframes animation_name {
+    /* 시작 및 종료 스타일 포함 가능 */
     from {
         /* Some styling for the start */
     }
@@ -11,6 +14,7 @@
 /* or */
 
 @keyframes animation_name {
+    /* 기간 동안 다른 단계의 스타일 (0 ~ 100%) 포함 가능 */
     0% {
         /* Some styling for the start */
     }
@@ -38,6 +42,7 @@
 
 @keyframes hide {
     0% {
+        /* opacity = 불투명도 변화 */
         opacity: 1;
         height: 100%;
         line-height: 100%;
@@ -66,6 +71,7 @@
     margin-bottom: 10px;
     animation-name: hide;
     animation-duration: 2s;
+    /* animation-fill-mode : 애니메이션 시작 전, 끝난 후의 스타일을 정의 */
     animation-fill-mode: forwards;
     animation-play-state: paused;
 }

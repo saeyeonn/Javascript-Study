@@ -2,8 +2,6 @@
 <html lang="en">
     <head>
         <title>Single Page</title>
-        <style>
-        </style>
         <script>
             // When back arrow is clicked, show previous section
             window.onpopstate = function(event) {
@@ -30,7 +28,15 @@
                     button.onclick = function() {
                         const section = this.dataset.section;
 
-                        // Add the current state to the history
+                        // JavaScript History API
+                        // * Add the current state to the history
+                        // * Allows to push information to our browser history and update URL manually
+                        // * onpopstate 매개변수 설정 -> 뒤로 가기 클릭 시 어떤 작업 수행하는지 지정
+                        // * 세가지 파라미터를 기반으로 새로운 요소를 브라우징 기록에 추가
+                        // 1) 상태와 관련된 모든 데이터
+                        // 2) 대부분의 웹 브라우저에서 무시되는 제목 매개변수
+                        // 3) URL에 표시될 내용
+                        // => 사용자 친화적으로 변화
                         history.pushState({section: section}, "", `section${section}`);
                         showSection(this.dataset.section);
                     };
